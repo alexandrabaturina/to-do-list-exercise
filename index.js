@@ -27,9 +27,16 @@ function App() {
         setValue('')
     }
 
+    const deleteTodo = e => {
+        const index = Number(e.target.id)
+        let temp = [...todos]
+        temp.splice(index, 1)
+        setTodos(temp)
+    }
+
     return (
         <>
-            {todos.map((todo, idx) => <div key={idx}>{todo.text}</div>)}
+            {todos.map((todo, idx) => <div key={idx} id={idx} onClick={deleteTodo}>{todo.text}</div>)}
             <form onSubmit={handleSubmit}>
                 <input
                     type="text"
