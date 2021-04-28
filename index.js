@@ -21,8 +21,7 @@ function App() {
         }])
     }
 
-    const deleteTodo = e => {
-        const index = Number(e.target.id)
+    const deleteTodo = index => {
         let temp = [...todos]
         temp.splice(index, 1)
         setTodos(temp)
@@ -31,7 +30,7 @@ function App() {
     return (
         <>
             {todos.map((todo, idx) =>
-                <div key={idx} id={idx} onClick={deleteTodo}>{todo.text}</div>)}
+                <TodoList key={idx} idx={idx} todo={todo} remove={deleteTodo} />)}
             <TodoForm addTodo={addTodo} />
         </>
     )
