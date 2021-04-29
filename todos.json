@@ -1,0 +1,16 @@
+{
+    "todos": [
+        {
+            "text": "Learn React",
+            "isComplete": false
+        },
+        {
+            "text": "Build To-Do List app",
+            "isComplete": false
+        },
+        {
+            "text": "Push To-Do List projgect on Github",
+            "isComplete": false
+        }
+    ]
+}

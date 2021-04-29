@@ -1,18 +1,17 @@
 function App() {
-    const [todos, setTodos] = React.useState([
-        {
-            text: 'Learn React',
-            isComplete: false
-        },
-        {
-            text: 'Build To-Do List app',
-            isComplete: false
-        },
-        {
-            text: 'Push To-Do List projgect on Github',
-            isComplete: false
-        }
-    ])
+
+    const [todos, setTodos] = React.useState([]);
+
+    React.useEffect(() => {
+        fetchTodos()
+    }, [])
+
+    // Fetch To-Do list items from JSON file
+    const fetchTodos = async () => {
+        const res = await fetch('todos.json')
+        const data = await res.json()
+        setTodos(data.todos)
+    }
 
     const addTodo = text => {
         setTodos([...todos, {
