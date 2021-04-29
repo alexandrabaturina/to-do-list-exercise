@@ -11,3 +11,8 @@ The goal of this exercise is to practice with:
 * Adding new to-do list items
 * Reading to-do list items
 * Removing items from to-do list
+## Getting Started
+To run ***To-Do List*** app locally,
+1. Clone this repo.
+2. ```cd``` into project directory.
+3. Run ```index.html``` on local server.
