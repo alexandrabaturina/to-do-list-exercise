@@ -27,11 +27,18 @@ function App() {
     }
 
     return (
-        <>
-            {todos.map((todo, idx) =>
-                <TodoList key={idx} idx={idx} todo={todo} remove={deleteTodo} />)}
+        <div>
+            <h1><i class="fa fa-check-square" aria-hidden="true"></i>To-Do List</h1>
+            <div class="todo-list">
+                {todos.map((todo, idx) =>
+                    <TodoList
+                        key={idx}
+                        idx={idx}
+                        todo={todo}
+                        remove={deleteTodo} />)}
+            </div>
             <TodoForm addTodo={addTodo} />
-        </>
+        </div>
     )
 }
 

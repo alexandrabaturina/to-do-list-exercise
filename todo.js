@@ -5,6 +5,10 @@ function TodoList({ todo, idx, remove }) {
     }
 
     return (
-        <div onClick={handleClick}>{todo.text}</div>
+        <div className="todo-item">
+            <div className="todo-text">{todo.text}</div>
+            <i class="fa fa-times" onClick={handleClick} ></i>
+        </div>
+
     )
 }

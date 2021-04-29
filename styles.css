@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+body {
+    font-family: 'Roboto';
+    font-weight: 500;
+    background-color: #f9f8f6;
+    color: #202022;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Krona One';
+    font-weight: 700;
+    font-size: 3em;
+}
+
+.fa-check-square {
+    padding-right: 10px;
+}
+
+div.todo-list>div.todo-item:nth-child(odd) {
+    background-color: #bad5dc;
+}
+
+div.todo-list>div.todo-item:nth-child(even) {
+    background-color: #b4b4af;
+}
+
+.todo-item {
+    font-size: 1.5em;
+    padding: 5px;
+    margin-top: 7px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.todo-item:hover {
+    opacity: 0.8;
+}
+
+.fa-times:hover {
+    cursor: pointer;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 7px;
+}
+
+input {
+    font-style: 'Roboto';
+    font-size: 1.2em;
+    height: 30px;
+    width: 100%;
+    justify-content: center;
+    border: 1px solid #202022;
+    color: #202022;
+    background-color: #f9f8f6;
+    padding-left: 5px;
+}
+
+input:focus {
+    border: 2px solid #202022;
+    background-color: #d3e29d;
+}
+
+::placeholder {
+    color: #202022;
+}
