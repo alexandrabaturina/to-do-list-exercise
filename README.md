@@ -11,6 +11,8 @@ The goal of this exercise is to practice with:
 * Adding new to-do list items
 * Reading to-do list items
 * Removing items from to-do list
+
+![image](https://user-images.githubusercontent.com/53233637/116622434-8c5a8e00-a8f9-11eb-8f32-2919ee416e0d.png)
 ## Getting Started
 To run ***To-Do List*** app locally,
 1. Clone this repo.
