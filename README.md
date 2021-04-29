@@ -6,3 +6,8 @@ The goal of this exercise is to practice with:
 * JSX
 * Components and props
 * CRUD operations
+## Features
+***To-Do List*** app has the following features:
+* Adding new to-do list items
+* Reading to-do list items
+* Removing items from to-do list
